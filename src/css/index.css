@@ -5,6 +5,12 @@
 }
 
 .code-block {
-	white-space: pre-wrap;
 	background: #E3F2FD;
+}
+
+.line-no-block {
+	float: left;
+	border-right: 1px solid black;
+	margin-right: 10px;
+	margin-left: 10px;
 }

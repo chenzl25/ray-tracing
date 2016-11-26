@@ -7,7 +7,59 @@
 </head>
 <body>
 	<div class="wrapper">
-		<h1></h1>
+		<h1>反射和折射</h1>
+		<img src="asset/reflectionrefraction.gif" alt="">
+		<p>
+			使用光线追踪的另外一个好处就是可以很容易地模拟反射和折射。反射光方向可以通过入射光线和平面的法向量来确定。而折射方向则可以通过入射光线和平面的法向量，还有介质的折射率来确定。反射和折射对最终我们看到的光的强度的贡献比例可以通过菲涅耳方程来确定。
+		</p>
+		<div>
+			<h2>伪代码：</h2>
+			<div class="code-block">
+				<div class="line-no-block">
+					1
+					<br/>
+					2
+					<br/>
+					3
+					<br/>
+					4
+					<br/>
+					5
+					<br/>
+					6
+					<br/>
+					7
+					<br/>
+					8
+					<br/>
+					9
+				</div>
+				<div>
+					<code>
+						// compute reflection color
+						<br/>
+						<b>color</b> reflectionCol = computeReflectionColor(); 
+						<br/>
+						// compute refraction color
+						<br/>
+						<b>color</b> refractionCol = computeRefractionColor(); 
+						<br/>
+						<b>float</b> Kr; // reflection mix value 
+						<br/>
+						<b>float</b> Kt; // refraction mix value 
+						<br/>
+						fresnel(refractiveIndex, normalHit, primaryRayDirection, &Kr, &Kt); 
+						<br/>
+						// mix the two
+						<br/>
+						<b>color</b> glassBallColorAtHit = Kr * reflectionColor + (1-Kr) * refractionColor; 
+					</code>
+				</div>
+			</div>
+		</div>
+		<p>
+			最后，反射和折射在自然界是一个不断持续的过程，也暗示着我们可以通过递归来实现这样的算法，但是要注意的是我们不可能无穷递归下取，一般我们在效率和效果之前取得一个平衡点。
+		</p>
 	</div>
 </body>
 </html>
