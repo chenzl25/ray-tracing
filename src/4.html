@@ -2,12 +2,29 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>后向追踪</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<h1>后向追踪</h1>
 	<div class="wrapper">
+		<div>
+			<p>
+				在后向跟踪里，我们从眼睛跟踪光子到光源。因为这个方向于自然界的过程相反，所以我们称这种方法为后向跟踪。这种方法为前向跟踪的缺陷提供了一种解决方法。由于我们的模拟不能像大自然一样快速和完美，我们必须从眼睛跟踪到光源。
+			</p>
+			<img src="asset/tracefromeyetolight.gif" />
+			<p>
+				如果光线碰到一个物体的某个点，我们找到有多少光线从光源照到这个点。有时，这个光线会被场景中的其他物体阻挡，我们称这条光为阴影光线。在计算机图形学中，我们从眼睛发射出的第一条光线叫做主光线。
+			</p>
+			<h2>
+				总结
+			</h2>
+			<p>
+				在计算机图形学中，追踪从光源或眼睛发射的光线的概念被称为路径追踪。 
+				也可以使用术语光线跟踪，但是路径跟踪的概念表明，这种计算机生成的图像的方法依赖于追踪光源到视点的路径（或反之亦然）。
+				通过以物理定律，我们可以轻松地模拟光学效应，例如场景中的物体表面的焦散或光的反射。
+			</p>
+		</div>
 		<div class="bottom-jump">
 			<a class="pred" href="3.html" title="">上一页</a>
 			<a class="contents" href="contents.html" title="">目录</a>
