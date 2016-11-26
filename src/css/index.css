@@ -1,0 +1,10 @@
+.wrapper {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.code-block {
+	white-space: pre-wrap;
+	background: #E3F2FD;
+}
