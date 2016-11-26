@@ -1,7 +1,28 @@
+* {
+	margin: 0 0 0 0;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+.navigator {
+	font-size: 25px;
+}
+
 .wrapper {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 10px;
+	padding-top: 50px;
+}
+
+h1 {
+	width: 100%;
+	margin-top: 0;
+	background: #1565C0;
+	color: white;
+	text-align: center;
+	position: fixed;
+	padding-bottom: 5px;
 }
 
 .code-block {
@@ -13,4 +34,16 @@
 	border-right: 1px solid black;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+.bottom-jump {
+	margin-top: 10px;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.bottom-jump .contents {
+	margin-left: 40px;
+	margin-right: 40px;
 }
