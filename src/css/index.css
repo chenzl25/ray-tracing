@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "self-ttf";
+  src: url("asset/Roboto-Regular.ttf");
+}
+
 * {
 	margin: 0 0 0 0;
-	font-family: Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
+	font-family: "self-ttf";
 	box-sizing:  border-box;
 }
+
 
 .navigator {
 	background: rgb(245, 248, 250);
@@ -88,11 +94,14 @@ h1 img {
 h2 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-size: 23px;
 }
 
 p {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	line-height: 30px;
+	font-size: 18px;
 }
 
 .code-block {
@@ -107,19 +116,6 @@ p {
 	margin-right: 10px;
 	margin-left: 10px;
 }
-
-.bottom-jump {
-	margin-top: 10px;
-	width: 300px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.bottom-jump .contents {
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
 
 .mid-551 {
 	width: 551px;
@@ -144,12 +140,6 @@ p {
 	transition: all 1s ease-out;
 }
 
-.download {
-}
-
-/*img {
-	box-shadow: 3px 3px 3px gray;
-}*/
 
 body {
 	background: #efefef;
