@@ -147,4 +147,7 @@ body {
 
 .wrapper img {
 	box-shadow: 3px 3px 3px gray;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
