@@ -1,4 +1,3 @@
 node_modules/
 dist/
-src/asset/*.mp3
 src/asset/*.mp4
